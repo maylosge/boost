@@ -7,7 +7,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
-      - key: BOT_TOKEN
-        fromSecret: BOT_TOKEN
-      - key: CRYPTOBOT_API_TOKEN
-        fromSecret: CRYPTOBOT_API_TOKEN
+      - key: 8179488362:AAHsucnTxhWjxc2EiaIBxaqP6cgtktdkg64
+        fromSecret: 8179488362:AAHsucnTxhWjxc2EiaIBxaqP6cgtktdkg64
+      - key: 411524:AA9iQZqe4tRAzy5xrmYnluWxVMNMRBrBLfO
+        fromSecret: 411524:AA9iQZqe4tRAzy5xrmYnluWxVMNMRBrBLfO
