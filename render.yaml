@@ -7,7 +7,7 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
-      - key: 8179488362:AAHsucnTxhWjxc2EiaIBxaqP6cgtktdkg64
-        fromSecret: 8179488362:AAHsucnTxhWjxc2EiaIBxaqP6cgtktdkg64
-      - key: 411524:AA9iQZqe4tRAzy5xrmYnluWxVMNMRBrBLfO
-        fromSecret: 411524:AA9iQZqe4tRAzy5xrmYnluWxVMNMRBrBLfO
+      - key: BOT_TOKEN
+        fromSecret: TELEGRAM_BOT_TOKEN_SECRET_NAME
+      - key: CRYPTOPAY_API_TOKEN
+        fromSecret: CRYPTOPAY_API_SECRET_NAME
