@@ -2,7 +2,7 @@ services:
   - type: web
     name: telegram-bot
     env: python
-    plan: free  # можно убрать или изменить, если надо
+    plan: free
     branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
