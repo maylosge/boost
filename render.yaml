@@ -8,6 +8,6 @@ services:
     startCommand: python bot.py
     envVars:
       - key: BOT_TOKEN
-        fromSecret: TELEGRAM_BOT_TOKEN_SECRET_NAME
+        fromSecret: BOT_TOKEN
       - key: CRYPTOPAY_API_TOKEN
-        fromSecret: CRYPTOPAY_API_SECRET_NAME
+        fromSecret: CRYPTOPAY_API_TOKEN
