@@ -7,8 +7,8 @@ from aiogram.filters import CommandStart
 from aiosend import CryptoPay
 
 # === Конфигурация ===
-BOT_TOKEN = "BOT_TOKEN"
-CRYPTOBOT_API_TOKEN = "CRYPTOBOT_API_TOKEN"
+BOT_TOKEN = "TOKEN_BOTA"
+CRYPTOBOT_API_TOKEN = "TOKEN_CRYPTOBOTA"
 ADMIN_ID = "860728574"
 
 bot = Bot(BOT_TOKEN)

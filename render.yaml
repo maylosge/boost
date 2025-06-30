@@ -10,6 +10,6 @@ services:
     startCommand: python bot.py
     envVars:
       - key: BOT_TOKEN
-        fromSecret: BOT_TOKEN
+        fromSecret: TOKEN_BOTA
       - key: CRYPTOBOT_API_TOKEN
-        fromSecret: CRYPTOBOT_API_TOKEN
+        fromSecret: TOKEN_CRYPTOBOTA
