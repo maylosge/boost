@@ -1,2 +1,2 @@
-aiogram
-aiosend
+aiogram==3.3.0
+aiosend==0.0.6
