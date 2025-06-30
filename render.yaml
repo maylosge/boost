@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    plan: free  # можно убрать или изменить, если надо
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        fromSecret: BOT_TOKEN
+      - key: CRYPTOBOT_API_TOKEN
+        fromSecret: CRYPTOBOT_API_TOKEN
