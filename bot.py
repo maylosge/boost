@@ -192,4 +192,21 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+    import threading
+    from http.server import BaseHTTPRequestHandler, HTTPServer
+
+    class HealthHandler(BaseHTTPRequestHandler):
+        def do_GET(self):
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b"I'm alive!")
+
+    def run_web_server():
+        port = int(os.environ.get("PORT", 8000))
+        server = HTTPServer(("0.0.0.0", port), HealthHandler)
+        print(f"Dummy web server running on port {port}")
+        server.serve_forever()
+
+    threading.Thread(target=run_web_server, daemon=True).start()
     asyncio.run(main())
