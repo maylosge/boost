@@ -10,5 +10,5 @@ services:
     envVars:
       - key: BOT_TOKEN
         fromSecret: BOT_TOKEN
-      - key: CRYPTOPAY_API_TOKEN
-        fromSecret: CRYPTOPAY_API_TOKEN
+      - key: CRYPTOBOT_API_TOKEN
+        fromSecret: CRYPTOBOT_API_TOKEN
